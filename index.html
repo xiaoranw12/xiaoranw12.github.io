@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sharon Wang | Data Scientist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --text: #e2e8f0;
+      --accent: #38bdf8;
+      --card: #1e293b;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      background-color: rgba(15, 23, 42, 0.9);
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(10px);
+    }
+    header h1 {
+      font-size: 1.4rem;
+      color: var(--accent);
+      margin: 0;
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    .hero {
+      text-align: center;
+      padding: 6rem 2rem 4rem;
+    }
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+    }
+    .avatar {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+      border: 3px solid var(--accent);
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h3 {
+      color: var(--accent);
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background-color: var(--card);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h4 {
+      color: var(--accent);
+      margin-top: 0;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid #334155;
+      margin-top: 2rem;
+      color: #94a3b8;
+    }
+    .links a {
+      color: var(--accent);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+      }
+      nav {
+        margin-top: 0.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Sharon Wang</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="https://avatars.githubusercontent.com/u/000000?v=4" alt="Avatar" class="avatar" />
+    <h2>Hi, I'm Sharon 👋</h2>
+    <p>Data Scientist passionate about analytics and optimization.</p>
+  </section>
+
+  <section id="about">
+    <h3>About Me</h3>
+    <p>
+      I'm a data scientist with strong analytical and technical skills in Python, SQL, and machine learning. 
+      I love transforming data into insights that drive business value and optimization. 
+      Currently exploring AI applications in financial and operational analytics.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h3>Projects</h3>
+    <div class="projects">
+      <div class="card">
+        <h4>📊 Predictive Analytics Dashboard</h4>
+        <p>Developed an end-to-end data pipeline and visualization dashboard to forecast business KPIs.</p>
+      </div>
+      <div class="card">
+        <h4>🚚 Logistics Optimization Model</h4>
+        <p>Built a machine learning model optimizing transportation costs and delivery time for JD Logistics.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3>Contact</h3>
+    <p>Feel free to reach out — I’d love to connect!</p>
+    <div class="links">
+      <a href="mailto:sharonwang@myyahoo.com">Email</a>
+      <a href="https://linkedin.com/in/wangxiaoran/" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Sharon Wang · Built with ❤️ using GitHub Pages</p>
+  </footer>
+</body>
+</html>
